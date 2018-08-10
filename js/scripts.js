@@ -20,6 +20,24 @@ $(function() {
     $("#question-4-screen").hide();
     $("#question-5-screen").show();
   });
+  $("button#btn-reset").click(function() {
+    $("#any-result").removeClass('result-show');
+    $("#any-result").addClass('result-hide');
+    $("#ruby-c-result").removeClass('result-show');
+    $("#ruby-c-result").addClass('result-hide');
+    $("#js-ruby-result").removeClass('result-show');
+    $("#js-ruby-result").addClass('result-hide');
+    $("#js-c-result").removeClass('result-show');
+    $("#js-c-result").addClass('result-hide');
+    $("#ruby-result").removeClass('result-show');
+    $("#ruby-result").addClass('result-hide');
+    $("#c-result").removeClass('result-show');
+    $("#c-result").addClass('result-hide');
+    $("#js-result").removeClass('result-show');
+    $("#js-result").addClass('result-hide');
+    $("#result-screen").hide();
+    $("#welcome").show();
+  })
 // This group contains the form functions and methods
   $("form#form-1").submit(function(event) {
     event.preventDefault();
