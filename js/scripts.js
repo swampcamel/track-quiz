@@ -1,9 +1,16 @@
 $(function() {
-  // This group toggles div visibility through buttons on each question div
-  $("button#begin").click(function() {
+//This group handles the name form and places the name throughout the quiz.
+  $("form#form-1").submit(function(event) {
+    event.preventDefault();
+
+    var name = $("input#name-input").val();
+
+    $("span.name").text(name);
+
     $("#welcome").hide();
     $("#question-1-screen").show();
   });
+// This group toggles div visibility through buttons on each question div
   $("button#btn-q1").click(function() {
     $("#question-1-screen").hide();
     $("#question-2-screen").show();
@@ -39,7 +46,7 @@ $(function() {
     $("#welcome").show();
   });
 // This group contains the form functions and methods
-  $("form#form-1").submit(function(event) {
+  $("form#form-2").submit(function(event) {
     event.preventDefault();
 // Establish variables that will track answers. cTrack, jsTrack and rubyTrack keep a tally while answer1-answer5 pull the values from the form.
     var cTrack = 0;
