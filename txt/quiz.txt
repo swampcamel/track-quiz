@@ -1,0 +1,40 @@
+What type of company sounds the most appealing to work for?
+
+1. Corporate Enterprise C#
+2. Mid-size Agency Ruby
+3. Small Businesses and Startups
+
+What type of apps do you want to work on?
+
+1. Large-scale ongoing projects in big teams
+2. Single-site web apps like Twitch or Patreon
+3. Mobile or high-performance apps
+4. Backend and Security apps
+
+Which of these statements best describes you?
+
+1.  I'm a creative that loves spending time with color and layout.
+2.  I'm a puzzle solver who loves mathematics and logic.
+3.  I'm a micromanager who loves making lists and organizing information.
+4. I'm an engineer who loves creating new solutions for others to use.
+
+What's the minimum salary you want to make as a developer?
+
+1. $69,000 - C#
+2. $76,000 - Ruby
+2. $110,000 - JavaScript
+
+What's your zodiac sign?
+
+1. Aquarius - JavaScript
+2. Pisces - JavaScript Ruby
+3. Aries - Ruby
+4. Taurus - C#/.net
+5. Gemini - Javascript
+6. Cancer- Javascript Ruby
+7. Leo - Ruby
+8. Virgo - C#/.net
+9. Libra - JavaScript C#
+10. Scorpio - Javascript C#
+11. Sagittarius - Ruby
+12.  Capricorn - C#/.net

@@ -1,0 +1,61 @@
+/* Global Styles  */
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #6BFF2D;
+  font-family: 'Iceland', cursive;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Accent Colors */
+
+.accent-1 {
+  background: linear-gradient(to bottom right, #30302F, 80%, #121211), no-repeat;
+}
+
+.accent-2 {
+  color: #FF009C;
+}
+
+.accent-3 {
+    background: linear-gradient(to bottom right, #30302F, 80%, #FF009C), no-repeat;
+}
+
+
+/* The Rest */
+
+.main {
+  border: #121211 solid 2 px;
+  -webkit-border-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  width: 80%;
+  max-width: 80%;
+  height: 50%;
+}
+
+.center {
+  text-align: center;
+}
