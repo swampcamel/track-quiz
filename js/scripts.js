@@ -10,7 +10,7 @@ $(function() {
 
   $("form#form-1").submit(function(event) {
     event.preventDefault();
-    var answer1 = $("input:radio[name=question1]:checked").val();
+    var answer1 = $("input:radio[name=question-1]:checked").val();
 
     if (answer1 === "c") {
       cTrack++;
@@ -29,7 +29,7 @@ $(function() {
 
   $("form#form-2").submit(function(event) {
     event.preventDefault();
-    var answer2 = $("input:radio[name=question2]:checked").val();
+    var answer2 = $("input:radio[name=question-2]:checked").val();
 
     if (answer2 === "c") {
       cTrack++;
@@ -48,7 +48,7 @@ $(function() {
 
   $("form#form-3").submit(function(event) {
     event.preventDefault();
-    var answer3 = $("input:radio[name=question3]:checked").val();
+    var answer3 = $("input:radio[name=question-3]:checked").val();
 
     if (answer3 === "c") {
       cTrack++;
@@ -67,7 +67,7 @@ $(function() {
 
   $("form#form-4").submit(function(event) {
     event.preventDefault();
-    var answer4 = $("input:radio[name=question4]:checked").val();
+    var answer4 = $("input:radio[name=question-4]:checked").val();
 
     if (answer4 === "c") {
       cTrack++;
@@ -86,7 +86,7 @@ $(function() {
 
   $("form#form-5").submit(function(event) {
     event.preventDefault();
-    var answer5 = $("input:radio[name=question5]:checked").val();
+    var answer5 = $("input:radio[name=question-5]:checked").val();
 
     if (answer5 === "c") {
       cTrack++;
@@ -108,5 +108,28 @@ $(function() {
     $("#question-5-screen").hide();
     $("#result-screen").show();
   });
+
+  if (jsTrack > cTrack && jsTrack > rubyTrack) {
+    $("#js-result").removeClass('result-hide');
+    $("#js-result").addClass('result-show');
+  } else if (cTrack > jsTrack && cTrack > rubyTrack) {
+    $("#c-result").removeClass('result-hide');
+    $("#c-result").addClass('result-show');
+  } else if (rubyTrack > jsTrack && rubyTrack > cTrack) {
+    $("#ruby-result").removeClass('result-hide');
+    $("#ruby-result").addClass('result-show');
+  } else if (jsTrack === cTrack && jsTrack > rubyTrack) {
+    $("#js-c-result").removeClass('result-hide');
+    $("#js-c-result").addClass('result-show');
+  } else if (jsTrack === rubyTrack && jsTrack > cTrack) {
+    $("#js-ruby-result").removeClass('result-hide');
+    $("#js-ruby-result").addClass('result-show');
+  } else if (rubyTrack === cTrack && rubyTrack > jsTrack) {
+    $("#ruby-c-result").removeClass('result-hide');
+    $("#ruby-c-result").addClass('result-show');
+  } else if (rubyTrack === cTrack && rubyTrack === jsTrack) {
+    $("#any-result").removeClass('result-hide');
+    $("#any-result").addClass('result-show');
+  }
 
 });
