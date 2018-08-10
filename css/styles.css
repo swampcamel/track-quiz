@@ -27,11 +27,6 @@ h5 {
   font-size: 16px;
 }
 
-
-.quiz button {
-  margin-top: 2%;
-}
-
 /* Accent Colors */
 
 .accent-1 {
@@ -76,15 +71,15 @@ h5 {
   max-height: 600px;
 }
 
-.center {
-  text-align: center;
-}
-
 .quiz {
   display: none;
   margin: auto;
   top: 20%;
   transform: translateY(20%);
+}
+
+.quiz button {
+  margin-top: 2%;
 }
 
 .result-hide, .result-main {
@@ -94,6 +89,10 @@ h5 {
 .result-show {
   display: inline;
   margin: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 .header {

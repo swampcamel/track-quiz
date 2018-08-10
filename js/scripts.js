@@ -37,7 +37,7 @@ $(function() {
     $("#js-result").addClass('result-hide');
     $("#result-screen").hide();
     $("#welcome").show();
-  })
+  });
 // This group contains the form functions and methods
   $("form#form-1").submit(function(event) {
     event.preventDefault();
