@@ -46,7 +46,7 @@ $(function() {
     $("#welcome").show();
   });
   $("button#monkey").click(function() {
-    $("#secret-monkey").fadetoggle();
+    $("#secret-monkey").toggle();
   });
 // This group contains the form functions and methods
   $("form#form-2").submit(function(event) {
