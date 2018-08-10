@@ -1,4 +1,5 @@
 $(function() {
+  // This group toggles div visibility through buttons on each question div
   $("button#begin").click(function() {
     $("#welcome").hide();
     $("#question-1-screen").show();
@@ -19,10 +20,10 @@ $(function() {
     $("#question-4-screen").hide();
     $("#question-5-screen").show();
   });
-
+// This group contains the form functions and methods
   $("form#form-1").submit(function(event) {
     event.preventDefault();
-
+// Establish variables that will track answers. cTrack, jsTrack and rubyTrack keep a tally while answer1-answer5 pull the values from the form.
     var cTrack = 0;
     var jsTrack = 0;
     var rubyTrack = 0;
@@ -32,7 +33,7 @@ $(function() {
     var answer3 = $("input:radio[name=question-3]:checked").val();
     var answer4 = $("input:radio[name=question-4]:checked").val();
     var answer5 = $("input:radio[name=question-5]:checked").val();
-
+// This group contains the branches that allow the tally to increase based off the input for each question.
     if (answer1 === "c") {
       cTrack++;
     } else if (answer1 === "js") {
@@ -78,10 +79,10 @@ $(function() {
     } else {
       rubyTrack++;
     }
-
+// This will switch to the final result div after tally has finished
     $("#question-5-screen").hide();
     $("#result-screen").show();
-
+// This compares tallies against each other to determine which child div to show.  Experimented with remove and add class methods instead of show/hide after roommate described that this operation is better practice than using show/hide methods.
   if (jsTrack > cTrack && jsTrack > rubyTrack) {
     $("#js-result").removeClass('result-hide');
     $("#js-result").addClass('result-show');
