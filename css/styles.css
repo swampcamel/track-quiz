@@ -14,9 +14,19 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+h1 {
+  text-shadow: 1px 1px 3px #6BFF2D;
+}
+
+h2, h3, h4, h5 {
+  text-shadow: 1px 1px 3px #FF009C;
+}
+
 h5 {
   font-size: 16px;
 }
+
 
 .quiz button {
   margin-top: 2%;
@@ -40,7 +50,7 @@ h5 {
 /* The Rest */
 
 .main {
-  border: #121211 solid 2 px;
+  border: #6BFF2D solid 2px;
   -webkit-border-radius: 50px;
   -webkit-border-bottom-right-radius: 50px;
   -webkit-border-bottom-left-radius: 50px;
@@ -61,23 +71,29 @@ h5 {
   left: 0;
   overflow: auto;
   width: 80%;
-  max-width: 80%;
+  max-width: 1060px;
   height: 65%;
+  max-height: 600px;
 }
 
 .center {
   text-align: center;
 }
 
-.quiz, .result-hide {
+.quiz {
   display: none;
   margin: auto;
   top: 20%;
   transform: translateY(20%);
 }
 
+.result-hide, .result-main {
+  display: none;
+}
+
 .result-show {
   display: inline;
+  margin: auto;
 }
 
 .header {
