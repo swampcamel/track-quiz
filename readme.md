@@ -19,7 +19,6 @@ _This site was created to explore branching concepts in JavaScript through an in
 
 _In one version of the script before the final commit, I attempted to use jQuery fade methods to switch between the windows and determined that stacking fadeIn and fadeOut on divs that would share the same view area doesn't work with the way I have it set up, so I reverted to the standard show/hide methods and the addClass removeClass methods used in the results screen._
 
-_
 
 ## Support and contact details
 
