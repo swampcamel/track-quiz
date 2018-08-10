@@ -10,7 +10,7 @@ $(function() {
     $("#welcome").hide();
     $("#question-1-screen").show();
   });
-// This group toggles div visibility through buttons on each question div
+// This group toggles div visibility through buttons on each question div as well as the SECRET MONKEY!!!
   $("button#btn-q1").click(function() {
     $("#question-1-screen").hide();
     $("#question-2-screen").show();
@@ -44,6 +44,9 @@ $(function() {
     $("#js-result").addClass('result-hide');
     $("#result-screen").hide();
     $("#welcome").show();
+  });
+  $("button#monkey").click(function() {
+    $("#secret-monkey").fadetoggle();
   });
 // This group contains the form functions and methods
   $("form#form-2").submit(function(event) {

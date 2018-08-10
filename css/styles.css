@@ -76,6 +76,19 @@ h6 {
   max-height: 600px;
 }
 
+.secret {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.secret-monkey {
+  position: absolute;
+  bottom: 20%;
+  left: 20px;
+  display: none;
+}
+
 .quiz {
   display: none;
   margin: auto;
