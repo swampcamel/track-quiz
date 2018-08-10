@@ -13,7 +13,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1 class="accent-2 center">Personality to Coding Track Quiz</h1>
+            <h1 class="accent-2 center header">Personality to Coding Track Quiz</h1>
           </div>
         </div>
       </div>
@@ -26,15 +26,16 @@
 
           <p>Our team of top-notch chimpanzee scientists have determined different languages will appeal to different personality types. Much like Orwell's 1984 or Bush's No Child Left Behind, one simple quiz of arbitrary questions will determine your niche in the corporate ecosystem for the rest of your life.</p>
 
-          <h4><em>What are you waiting for?</em></h4>
+          <h5><em>What are you waiting for?</em></h5>
           <br>
           <button id="begin" type="button" class="btn btn-dark btn-lg accent-3">BEGIN</button>
         </div>
 <!-- Question 1 Screen -->
+        <form id="form-1">
         <div id="question-1-screen"class="quiz">
           <h4>What's the minimum salary you could stand to work for as a developer?</h4>
           <hr>
-          <form id="form-1">
+
             <div class="form-check">
               <input class="form-check-input" type="radio" name="question-1" id="q1-answer1" value="c" checked>
               <label class="form-check-label" for="q1-answer1">
@@ -53,14 +54,12 @@
                 $110,000
               </label>
             </div>
-            <button id="btn-q1" type="submit" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
-          </form>
+            <button id="btn-q1" type="button" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
         </div>
 <!-- Question 2 Screen -->
         <div id="question-2-screen"class="quiz">
           <h4>What type of company sounds the most appealing to work for?</h4>
           <hr>
-          <form id="form-2">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="question-2" id="q2-answer1" value="c" checked>
               <label class="form-check-label" for="q2-answer1">
@@ -79,14 +78,12 @@
                 Small Business and Startups
               </label>
             </div>
-            <button id="btn-q2" type="submit" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
-          </form>
+            <button id="btn-q2" type="button" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
         </div>
 <!-- Question 3 Screen -->
         <div id="question-3-screen"class="quiz">
           <h4>What type of apps do you want to develop?</h4>
           <hr>
-          <form id="form-3">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="question-3" id="q3-answer1" value="c" checked>
               <label class="form-check-label" for="q3-answer1">
@@ -105,14 +102,12 @@
                 Mobile or High Performance Apps
               </label>
             </div>
-            <button id="btn-q3" type="submit" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
-          </form>
+            <button id="btn-q3" type="button" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
         </div>
 <!-- Question 4 Screen -->
         <div id="question-4-screen"class="quiz">
           <h4>Which of these statements best describes you?</h4>
           <hr>
-          <form id="form-4">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="question-4" id="q4-answer1" value="c" checked>
               <label class="form-check-label" for="q4-answer1">
@@ -131,14 +126,12 @@
                 I'm a creative who loves spending time with color and layout.
               </label>
             </div>
-            <button id="btn-q4" type="submit" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
-          </form>
+            <button id="btn-q4" type="button" class="btn btn-dark btn-lg accent-3">NEXT &gt;&gt;</button>
         </div>
 <!-- Question 5 Screen -->
         <div id="question-5-screen"class="quiz">
           <h4>What's your zodiac sign?</h4>
           <hr>
-          <form id="form-5">
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -227,10 +220,13 @@
           </form>
         </div>
         <div id="result-screen" class="center quiz">
-          <h3>Our team of virtual AI chimps have deigned your purpose:</h3>
+          <h5>Our team of virtual AI chimps have deigned your purpose:</h5>
+          <br>
           <div id="js-result" class="result-hide">
             <h4>You shall henceforth and forever onward be incorporated as:</h4>
+            <br>
             <h2>A JAVASCRIPT DEVELOPER</h2>
+            <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div id="c-result" class="result-hide">

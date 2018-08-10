@@ -1,16 +1,37 @@
-var cTrack = 0;
-var jsTrack = 0;
-var rubyTrack = 0;
-
 $(function() {
   $("button#begin").click(function() {
     $("#welcome").hide();
     $("#question-1-screen").show();
   });
+  $("button#btn-q1").click(function() {
+    $("#question-1-screen").hide();
+    $("#question-2-screen").show();
+  });
+  $("button#btn-q2").click(function() {
+    $("#question-2-screen").hide();
+    $("#question-3-screen").show();
+  });
+  $("button#btn-q3").click(function() {
+    $("#question-3-screen").hide();
+    $("#question-4-screen").show();
+  });
+  $("button#btn-q4").click(function() {
+    $("#question-4-screen").hide();
+    $("#question-5-screen").show();
+  });
 
   $("form#form-1").submit(function(event) {
     event.preventDefault();
+
+    var cTrack = 0;
+    var jsTrack = 0;
+    var rubyTrack = 0;
+
     var answer1 = $("input:radio[name=question-1]:checked").val();
+    var answer2 = $("input:radio[name=question-2]:checked").val();
+    var answer3 = $("input:radio[name=question-3]:checked").val();
+    var answer4 = $("input:radio[name=question-4]:checked").val();
+    var answer5 = $("input:radio[name=question-5]:checked").val();
 
     if (answer1 === "c") {
       cTrack++;
@@ -19,17 +40,6 @@ $(function() {
     } else {
       rubyTrack++;
     }
-    console.log("cTrack =" + cTrack);
-    console.log("jsTrack =" + jsTrack);
-    console.log("rubyTrack =" + rubyTrack);
-
-    $("#question-1-screen").hide();
-    $("#question-2-screen").show();
-  });
-
-  $("form#form-2").submit(function(event) {
-    event.preventDefault();
-    var answer2 = $("input:radio[name=question-2]:checked").val();
 
     if (answer2 === "c") {
       cTrack++;
@@ -38,36 +48,14 @@ $(function() {
     } else {
       rubyTrack++;
     }
-    console.log("cTrack =" + cTrack);
-    console.log("jsTrack =" + jsTrack);
-    console.log("rubyTrack =" + rubyTrack);
-
-    $("#question-2-screen").hide();
-    $("#question-3-screen").show();
-  });
-
-  $("form#form-3").submit(function(event) {
-    event.preventDefault();
-    var answer3 = $("input:radio[name=question-3]:checked").val();
 
     if (answer3 === "c") {
-      cTrack++;
+      cTrack = cTrack++;
     } else if (answer3 === "js") {
       jsTrack++;
     } else {
       rubyTrack++;
     }
-    console.log("cTrack =" + cTrack);
-    console.log("jsTrack =" + jsTrack);
-    console.log("rubyTrack =" + rubyTrack);
-
-    $("#question-3-screen").hide();
-    $("#question-4-screen").show();
-  });
-
-  $("form#form-4").submit(function(event) {
-    event.preventDefault();
-    var answer4 = $("input:radio[name=question-4]:checked").val();
 
     if (answer4 === "c") {
       cTrack++;
@@ -76,17 +64,6 @@ $(function() {
     } else {
       rubyTrack++;
     }
-    console.log("cTrack =" + cTrack);
-    console.log("jsTrack =" + jsTrack);
-    console.log("rubyTrack =" + rubyTrack);
-
-    $("#question-4-screen").hide();
-    $("#question-5-screen").show();
-  });
-
-  $("form#form-5").submit(function(event) {
-    event.preventDefault();
-    var answer5 = $("input:radio[name=question-5]:checked").val();
 
     if (answer5 === "c") {
       cTrack++;
@@ -101,13 +78,9 @@ $(function() {
     } else {
       rubyTrack++;
     }
-    console.log("cTrack =" + cTrack);
-    console.log("jsTrack =" + jsTrack);
-    console.log("rubyTrack =" + rubyTrack);
 
     $("#question-5-screen").hide();
     $("#result-screen").show();
-  });
 
   if (jsTrack > cTrack && jsTrack > rubyTrack) {
     $("#js-result").removeClass('result-hide');
@@ -132,4 +105,5 @@ $(function() {
     $("#any-result").addClass('result-show');
   }
 
+  });
 });
