@@ -13,7 +13,7 @@ _This site was created to explore branching concepts in JavaScript through an in
 * _To view page, visit https://swampcamel.github.io/track-quiz/ ._
 * _To access repository, visit https://github.com/swampcamel/track-quiz ._
 * _To run site offline, clone repository.  Open index.html in the root directory of cloned repository in your preferred browser._
-* _IMPORTANT: If attempting to run site offline, you will need to change links and scripts in HEAD of index.HTML to local resources for Bootstrap, JavaScript, and jQuery for site to function the same as with CDN integration.  To use Google Fonts offline, read Google's documentation on the process.
+* _IMPORTANT: If attempting to run site offline, you will need to change links and scripts in HEAD of index.HTML to local resources for Bootstrap, JavaScript, and jQuery for site to function the same as with CDN integration.  To use Google Fonts offline, read Google's documentation on the process._
 
 ## Known Bugs
 
